@@ -32,6 +32,11 @@
 /**
  * Miscellaneous
  */
-$GLOBALS['TL_LANG']['MSC'][''] = '';
-
+$GLOBALS['TL_DCA']['tl_page']['fields']['helptext'] = array
+(
+    'label'                   => array('Help message', 'Help message to be displayed beneath page title in navigation.'),
+    'exclude'               => true,
+    'inputType'            => 'textarea',
+    'eval'                    => array('rows'=>20, 'cols'=>15, 'decodeEntities'=>true, 'rte'=>'tinyMCE', 'tl_class'=>'w100 clr')
+);
 ?>
